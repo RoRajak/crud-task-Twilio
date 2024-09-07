@@ -1,5 +1,3 @@
-### README.md
-
 # Node.js CRUD Application with Aiven MySQL Integration
 
 This project is a simple CRUD (Create, Read, Update, Delete) application built with Node.js and Express.js. The application connects to an Aiven-hosted MySQL database and manages contacts in a `contacts` table.
