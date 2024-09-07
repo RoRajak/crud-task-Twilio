@@ -43,8 +43,8 @@ FRESHSALES_DOMAIN=<your-freshalsedomain>
 FRESHSALES_API_KEY=<your-api-key>
 ```
 
-### 4. Database Initialization
-The database initialization script will check if the `contacts` table exists in your Aiven MySQL database. If the table does not exist, it will create it automatically.
+### 4. Database 
+The dbConfig script will check if the `contacts` table exists in your Aiven MySQL database. If the table does not exist, it will create it automatically.
 
 The table schema is as follows:
 - `id`: INT (Auto Increment, Primary Key)
@@ -53,19 +53,12 @@ The table schema is as follows:
 - `email`: VARCHAR(100)
 - `mobile_number`: VARCHAR(15)
 
-The initialization script is included in the `initializeDatabase()` function in `index.js`.
-
-To run the database initialization, simply start the server:
-
-```bash
-npm run dev
-```
 
 ### 5. Run the Application
 To start the Node.js application in development mode, use:
 
 ```bash
-npm run dev
+nodemon run dev
 ```
 
 This will start the server on port 3000 by default.
